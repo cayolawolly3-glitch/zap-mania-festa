@@ -1,0 +1,1088 @@
+/* =========================================
+   ZAP MANIA FESTA
+   ROSA + BRANCO
+========================================= */
+
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #333;
+}
+
+
+/* =========================================
+   CORES
+========================================= */
+
+:root {
+    --rosa: #e91e63;
+    --rosa-escuro: #c2185b;
+    --rosa-claro: #fff0f6;
+    --rosa-suave: #fff7fa;
+    --branco: #ffffff;
+    --cinza: #777;
+    --preto: #333;
+    --borda: #f3d9e3;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    width: 100%;
+    height: 85px;
+
+    padding: 0 7%;
+
+    background: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid var(--borda);
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 58px;
+    height: 58px;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+}
+
+.logo strong {
+    display: block;
+
+    color: var(--rosa);
+
+    font-size: 20px;
+}
+
+.logo span {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #888;
+
+    font-size: 11px;
+}
+
+
+/* MENU */
+
+nav {
+    display: flex;
+
+    gap: 30px;
+}
+
+nav a {
+    color: #444;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--rosa);
+}
+
+
+/* CARRINHO */
+
+.btn-carrinho {
+    border: none;
+
+    background: var(--rosa);
+
+    color: white;
+
+    padding: 12px 18px;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-carrinho:hover {
+    background: var(--rosa-escuro);
+
+    transform: translateY(-2px);
+}
+
+#contador-carrinho {
+    background: white;
+
+    color: var(--rosa);
+
+    border-radius: 50%;
+
+    padding: 2px 7px;
+
+    margin-left: 4px;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   BANNER
+========================================= */
+
+.banner {
+    min-height: 570px;
+
+    background:
+        radial-gradient(
+            circle at 90% 20%,
+            #ffd6e5,
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            #fff,
+            #fff1f7
+        );
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 70px 8%;
+
+    overflow: hidden;
+}
+
+
+.banner-conteudo {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+
+/* TEXTO DO BANNER */
+
+.banner-texto {
+    max-width: 620px;
+}
+
+.subtitulo {
+    color: var(--rosa);
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.banner h1 {
+    color: #333;
+
+    font-size: 56px;
+
+    line-height: 1.08;
+
+    margin-bottom: 20px;
+}
+
+.banner h1 span {
+    color: var(--rosa);
+}
+
+.descricao {
+    color: #777;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    max-width: 500px;
+
+    margin-bottom: 30px;
+}
+
+
+/* BOTÃO WHATSAPP */
+
+.btn-whatsapp {
+    display: inline-block;
+
+    padding: 15px 25px;
+
+    background: var(--rosa);
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 8px 20px rgba(233, 30, 99, 0.25);
+
+    transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background: var(--rosa-escuro);
+
+    transform: translateY(-3px);
+}
+
+
+/* IMAGEM/DECORAÇÃO DO BANNER */
+
+.banner-imagem {
+    width: 400px;
+    height: 400px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    box-shadow:
+        0 20px 60px rgba(233, 30, 99, 0.12);
+
+    border: 8px solid #ffe1ec;
+}
+
+.comidas {
+    font-size: 70px;
+
+    line-height: 1.5;
+
+    text-align: center;
+
+    max-width: 280px;
+}
+
+.decoracao {
+    position: absolute;
+
+    top: 20px;
+
+    right: 25px;
+
+    font-size: 40px;
+
+    animation: flutuar 2s infinite alternate;
+}
+
+@keyframes flutuar {
+
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+
+}
+
+
+/* =========================================
+   CATEGORIAS
+========================================= */
+
+.categorias {
+    padding: 55px 8%;
+
+    background: white;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.categoria {
+    background: var(--rosa-suave);
+
+    border: 1px solid var(--borda);
+
+    border-radius: 15px;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.categoria:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 12px 30px rgba(233, 30, 99, 0.12);
+}
+
+.categoria .icone {
+    font-size: 42px;
+
+    margin-bottom: 12px;
+}
+
+.categoria h3 {
+    color: var(--rosa);
+
+    font-size: 18px;
+
+    margin-bottom: 8px;
+}
+
+.categoria p {
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   PRODUTOS
+========================================= */
+
+.produtos {
+    padding: 90px 8%;
+
+    background: #fff9fb;
+}
+
+.titulo-secao {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.titulo-secao p {
+    color: var(--rosa);
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.titulo-secao h2 {
+    color: #333;
+
+    font-size: 35px;
+
+    margin: 10px 0;
+}
+
+.titulo-secao span {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* GRID */
+
+.lista-produtos {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* CARD */
+
+.produto {
+    background: white;
+
+    border: 1px solid var(--borda);
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.03);
+}
+
+.produto:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 35px rgba(233, 30, 99, 0.12);
+}
+
+
+/* IMAGEM */
+
+.produto-imagem {
+    height: 220px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0f6,
+            #ffe1ec
+        );
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 85px;
+}
+
+
+/* INFORMAÇÕES */
+
+.produto-info {
+    padding: 22px;
+}
+
+.produto-info small {
+    color: var(--rosa);
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+.produto-info h3 {
+    color: #333;
+
+    font-size: 19px;
+
+    margin: 8px 0;
+}
+
+.produto-info p {
+    color: #888;
+
+    font-size: 13px;
+
+    margin-bottom: 15px;
+}
+
+.produto-info strong {
+    display: block;
+
+    color: var(--rosa);
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+
+/* BOTÃO PRODUTO */
+
+.produto-info button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background: var(--rosa);
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.produto-info button:hover {
+    background: var(--rosa-escuro);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   SOBRE
+========================================= */
+
+.sobre {
+    padding: 90px 10%;
+
+    background: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+.sobre-texto {
+    max-width: 650px;
+}
+
+.sobre-texto > p {
+    color: var(--rosa);
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.sobre h2 {
+    color: #333;
+
+    font-size: 38px;
+
+    margin: 12px 0 20px;
+}
+
+.sobre span {
+    color: #777;
+
+    line-height: 1.8;
+
+    font-size: 15px;
+}
+
+
+/* CARD SOBRE */
+
+.sobre-card {
+    min-width: 270px;
+
+    padding: 45px;
+
+    background: var(--rosa-claro);
+
+    border: 1px solid var(--borda);
+
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+.sobre-card div {
+    font-size: 55px;
+
+    margin-bottom: 10px;
+}
+
+.sobre-card h3 {
+    color: var(--rosa);
+
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+.sobre-card p {
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   BENEFÍCIOS
+========================================= */
+
+.beneficios {
+    padding: 45px 8%;
+
+    background: var(--rosa-suave);
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    border-top: 1px solid var(--borda);
+
+    border-bottom: 1px solid var(--borda);
+}
+
+.beneficio {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 20px;
+}
+
+.beneficio > div:first-child {
+    font-size: 35px;
+}
+
+.beneficio strong {
+    color: #444;
+
+    font-size: 14px;
+}
+
+.beneficio p {
+    color: #888;
+
+    font-size: 12px;
+
+    margin-top: 5px;
+}
+
+
+/* WHATSAPP */
+
+.whatsapp-beneficio a {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    text-decoration: none;
+
+    color: inherit;
+}
+
+.whatsapp-beneficio a:hover strong {
+    color: var(--rosa);
+}
+
+
+/* =========================================
+   CONTATO
+========================================= */
+
+.contato {
+    padding: 90px 20px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0f6,
+            #fff
+        );
+}
+
+.contato > p {
+    color: var(--rosa);
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.contato h2 {
+    color: #333;
+
+    font-size: 35px;
+
+    margin: 12px 0;
+}
+
+.contato span {
+    color: #777;
+
+    font-size: 15px;
+}
+
+
+/* BOTÃO CONTATO */
+
+.btn-contato {
+    display: inline-block;
+
+    background: var(--rosa);
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 15px 28px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 8px 20px rgba(233, 30, 99, 0.2);
+}
+
+.btn-contato:hover {
+    background: var(--rosa-escuro);
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: #2d1721;
+
+    color: white;
+
+    padding: 45px 8%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+/* LOGO FOOTER */
+
+.footer-logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.footer-logo img {
+    width: 55px;
+    height: 55px;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+}
+
+.footer-logo strong {
+    display: block;
+
+    color: #ff80ab;
+
+    font-size: 17px;
+}
+
+.footer-logo span {
+    display: block;
+
+    color: #c9aab6;
+
+    font-size: 11px;
+
+    margin-top: 4px;
+}
+
+
+/* LINKS */
+
+.footer-social {
+    display: flex;
+
+    gap: 20px;
+}
+
+.footer-social a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: #ff80ab;
+}
+
+
+/* COPYRIGHT */
+
+.footer-copy {
+    color: #bfa6b0;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+    header {
+        padding: 0 4%;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .banner {
+        padding: 60px 6%;
+    }
+
+    .banner h1 {
+        font-size: 45px;
+    }
+
+    .banner-imagem {
+        width: 330px;
+        height: 330px;
+    }
+
+    .comidas {
+        font-size: 55px;
+    }
+
+    .categorias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .lista-produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .beneficios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    header {
+        height: 75px;
+
+        padding: 0 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .logo img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .logo strong {
+        font-size: 16px;
+    }
+
+    .logo span {
+        font-size: 9px;
+    }
+
+    .btn-carrinho {
+        padding: 10px 13px;
+
+        font-size: 12px;
+    }
+
+
+    /* BANNER */
+
+    .banner {
+        padding: 55px 25px;
+    }
+
+    .banner-conteudo {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .banner-texto {
+        max-width: 100%;
+    }
+
+    .banner h1 {
+        font-size: 38px;
+    }
+
+    .descricao {
+        font-size: 15px;
+    }
+
+    .banner-imagem {
+        width: 280px;
+        height: 280px;
+
+        margin-top: 20px;
+    }
+
+    .comidas {
+        font-size: 48px;
+    }
+
+
+    /* CATEGORIAS */
+
+    .categorias {
+        grid-template-columns: 1fr;
+
+        padding: 40px 20px;
+    }
+
+
+    /* PRODUTOS */
+
+    .produtos {
+        padding: 65px 20px;
+    }
+
+    .titulo-secao h2 {
+        font-size: 28px;
+    }
+
+    .lista-produtos {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* SOBRE */
+
+    .sobre {
+        padding: 65px 25px;
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .sobre h2 {
+        font-size: 30px;
+    }
+
+    .sobre-card {
+        width: 100%;
+    }
+
+
+    /* BENEFÍCIOS */
+
+    .beneficios {
+        grid-template-columns: 1fr;
+
+        padding: 30px 20px;
+    }
+
+
+    /* CONTATO */
+
+    .contato {
+        padding: 65px 20px;
+    }
+
+    .contato h2 {
+        font-size: 28px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 40px 20px;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+}

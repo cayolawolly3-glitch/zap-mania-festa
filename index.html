@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zap Mania Festa | Doces e Salgados</title>
+
+    <meta
+        name="description"
+        content="Zap Mania Festa - Doces e salgados para festas, eventos e comemorações."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
+    <header>
+
+        <div class="logo">
+
+            <img
+                src="logo.png"
+                alt="Zap Mania Festa"
+            >
+
+            <div>
+                <strong>Zap Mania Festa</strong>
+                <span>Doces e salgados para festas</span>
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a href="#inicio">
+                Início
+            </a>
+
+            <a href="#produtos">
+                Produtos
+            </a>
+
+            <a href="#sobre">
+                Sobre Nós
+            </a>
+
+            <a href="#contato">
+                Contato
+            </a>
+
+        </nav>
+
+
+        <button class="btn-carrinho">
+
+            🛒
+
+            Carrinho
+
+            <span id="contador-carrinho">
+                0
+            </span>
+
+        </button>
+
+    </header>
+
+
+
+    <!-- =========================
+         BANNER PRINCIPAL
+    ========================== -->
+
+    <main>
+
+        <section
+            id="inicio"
+            class="banner"
+        >
+
+            <div class="banner-conteudo">
+
+
+                <div class="banner-texto">
+
+                    <p class="subtitulo">
+                        DOCES E SALGADOS PARA FESTAS
+                    </p>
+
+
+                    <h1>
+
+                        Deixe sua festa
+                        <br>
+
+                        <span>
+                            ainda mais especial!
+                        </span>
+
+                    </h1>
+
+
+                    <p class="descricao">
+
+                        Doces e salgados feitos com muito carinho
+                        para tornar seu momento inesquecível. 💗
+
+                    </p>
+
+
+                    <a
+                        href="https://wa.me/5511989207413?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento%20para%20minha%20festa.%20🎉"
+                        target="_blank"
+                        class="btn-whatsapp"
+                    >
+
+                        💬
+
+                        Fazer um orçamento
+
+                    </a>
+
+                </div>
+
+
+                <div class="banner-imagem">
+
+                    <div class="decoracao">
+                        💗
+                    </div>
+
+                    <div class="comidas">
+
+                        🍫
+                        🧁
+                        🥟
+                        🍬
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CATEGORIAS
+        ========================== -->
+
+        <section class="categorias">
+
+            <div class="categoria">
+
+                <div class="icone">
+                    🧁
+                </div>
+
+                <h3>
+                    Doces
+                </h3>
+
+                <p>
+                    Brigadeiros, beijinhos,
+                    doces no potinho e muito mais!
+                </p>
+
+            </div>
+
+
+            <div class="categoria">
+
+                <div class="icone">
+                    🥟
+                </div>
+
+                <h3>
+                    Salgados
+                </h3>
+
+                <p>
+                    Coxinhas, risoles, empadas,
+                    pastéis e muito mais!
+                </p>
+
+            </div>
+
+
+            <div class="categoria">
+
+                <div class="icone">
+                    🎂
+                </div>
+
+                <h3>
+                    Kits Festa
+                </h3>
+
+                <p>
+                    Práticos e completos
+                    para sua comemoração!
+                </p>
+
+            </div>
+
+
+            <div class="categoria">
+
+                <div class="icone">
+                    🎁
+                </div>
+
+                <h3>
+                    Personalizados
+                </h3>
+
+                <p>
+                    Do jeitinho que
+                    você imagina!
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PRODUTOS
+        ========================== -->
+
+        <section
+            id="produtos"
+            class="produtos"
+        >
+
+
+            <div class="titulo-secao">
+
+                <p>
+                    PRODUTOS EM DESTAQUE
+                </p>
+
+                <h2>
+                    Nossos queridinhos 💗
+                </h2>
+
+                <span>
+                    Escolha seus favoritos para deixar sua festa ainda mais gostosa.
+                </span>
+
+            </div>
+
+
+
+            <div class="lista-produtos">
+
+
+                <!-- PRODUTO 1 -->
+
+                <div
+                    class="produto"
+                    data-nome="Bolo no Pote"
+                    data-preco="8.00"
+                >
+
+                    <div class="produto-imagem">
+
+                        🍰
+
+                    </div>
+
+
+                    <div class="produto-info">
+
+                        <small>
+                            DOCES
+                        </small>
+
+                        <h3>
+                            Bolo no Pote
+                        </h3>
+
+                        <p>
+                            Diversos sabores
+                        </p>
+
+                        <strong>
+                            R$ 8,00
+                        </strong>
+
+                        <button
+                            onclick="adicionarCarrinho('Bolo no Pote', 8.00)"
+                        >
+
+                            🛒
+                            Adicionar ao carrinho
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PRODUTO 2 -->
+
+                <div
+                    class="produto"
+                    data-nome="Brigadeiro"
+                    data-preco="70.00"
+                >
+
+                    <div class="produto-imagem">
+
+                        🍫
+
+                    </div>
+
+
+                    <div class="produto-info">
+
+                        <small>
+                            DOCES
+                        </small>
+
+                        <h3>
+                            Brigadeiro
+                        </h3>
+
+                        <p>
+                            Cento - 100 unidades
+                        </p>
+
+                        <strong>
+                            R$ 70,00
+                        </strong>
+
+                        <button
+                            onclick="adicionarCarrinho('Brigadeiro', 70.00)"
+                        >
+
+                            🛒
+                            Adicionar ao carrinho
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PRODUTO 3 -->
+
+                <div
+                    class="produto"
+                    data-nome="Beijinho"
+                    data-preco="70.00"
+                >
+
+                    <div class="produto-imagem">
+
+                        🥥
+
+                    </div>
+
+
+                    <div class="produto-info">
+
+                        <small>
+                            DOCES
+                        </small>
+
+                        <h3>
+                            Beijinho
+                        </h3>
+
+                        <p>
+                            Cento - 100 unidades
+                        </p>
+
+                        <strong>
+                            R$ 70,00
+                        </strong>
+
+                        <button
+                            onclick="adicionarCarrinho('Beijinho', 70.00)"
+                        >
+
+                            🛒
+                            Adicionar ao carrinho
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PRODUTO 4 -->
+
+                <div
+                    class="produto"
+                    data-nome="Coxinha"
+                    data-preco="60.00"
+                >
+
+                    <div class="produto-imagem">
+
+                        🥟
+
+                    </div>
+
+
+                    <div class="produto-info">
+
+                        <small>
+                            SALGADOS
+                        </small>
+
+                        <h3>
+                            Coxinha
+                        </h3>
+
+                        <p>
+                            Cento - 100 unidades
+                        </p>
+
+                        <strong>
+                            R$ 60,00
+                        </strong>
+
+                        <button
+                            onclick="adicionarCarrinho('Coxinha', 60.00)"
+                        >
+
+                            🛒
+                            Adicionar ao carrinho
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PRODUTO 5 -->
+
+                <div
+                    class="produto"
+                    data-nome="Empadinha"
+                    data-preco="60.00"
+                >
+
+                    <div class="produto-imagem">
+
+                        🥧
+
+                    </div>
+
+
+                    <div class="produto-info">
+
+                        <small>
+                            SALGADOS
+                        </small>
+
+                        <h3>
+                            Empadinha
+                        </h3>
+
+                        <p>
+                            Cento - 100 unidades
+                        </p>
+
+                        <strong>
+                            R$ 60,00
+                        </strong>
+
+                        <button
+                            onclick="adicionarCarrinho('Empadinha', 60.00)"
+                        >
+
+                            🛒
+                            Adicionar ao carrinho
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PRODUTO 6 -->
+
+                <div
+                    class="produto"
+                    data-nome="Risole"
+                    data-preco="60.00"
+                >
+
+                    <div class="produto-imagem">
+
+                        🥠
+
+                    </div>
+
+
+                    <div class="produto-info">
+
+                        <small>
+                            SALGADOS
+                        </small>
+
+                        <h3>
+                            Risole
+                        </h3>
+
+                        <p>
+                            Cento - 100 unidades
+                        </p>
+
+                        <strong>
+                            R$ 60,00
+                        </strong>
+
+                        <button
+                            onclick="adicionarCarrinho('Risole', 60.00)"
+                        >
+
+                            🛒
+                            Adicionar ao carrinho
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             SOBRE NÓS
+        ========================== -->
+
+        <section
+            id="sobre"
+            class="sobre"
+        >
+
+            <div class="sobre-texto">
+
+                <p>
+                    SOBRE NÓS
+                </p>
+
+                <h2>
+                    Feito com amor para sua festa. 💗
+                </h2>
+
+                <span>
+
+                    Na Zap Mania Festa, cada pedido é preparado
+                    com carinho para deixar sua comemoração
+                    ainda mais especial.
+
+                    <br><br>
+
+                    Trabalhamos com doces, salgados e opções
+                    para diferentes tipos de festas e eventos.
+
+                </span>
+
+            </div>
+
+
+            <div class="sobre-card">
+
+                <div>
+                    ❤️
+                </div>
+
+                <h3>
+                    Feito com amor
+                </h3>
+
+                <p>
+                    Cada pedido é especial.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             BENEFÍCIOS
+        ========================== -->
+
+        <section class="beneficios">
+
+
+            <div class="beneficio">
+
+                <div>
+                    🚚
+                </div>
+
+                <div>
+
+                    <strong>
+                        Entregamos na sua região
+                    </strong>
+
+                    <p>
+                        Consulte o valor do frete.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="beneficio">
+
+                <div>
+                    🛡️
+                </div>
+
+                <div>
+
+                    <strong>
+                        Pagamento seguro
+                    </strong>
+
+                    <p>
+                        Pix, cartão e dinheiro.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="beneficio">
+
+                <div>
+                    💗
+                </div>
+
+                <div>
+
+                    <strong>
+                        Feito com amor
+                    </strong>
+
+                    <p>
+                        Cada pedido é especial.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="beneficio whatsapp-beneficio">
+
+                <a
+                    href="https://wa.me/5511989207413?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento%20para%20minha%20festa.%20🎉"
+                    target="_blank"
+                >
+
+                    <div>
+                        💬
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Fale conosco pelo WhatsApp
+                        </strong>
+
+                        <p>
+                            Clique para conversar
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             CONTATO
+        ========================== -->
+
+        <section
+            id="contato"
+            class="contato"
+        >
+
+            <p>
+                FALE CONOSCO
+            </p>
+
+            <h2>
+                Vamos deixar sua festa incrível? 🎉
+            </h2>
+
+            <span>
+                Entre em contato e faça seu orçamento.
+            </span>
+
+
+            <br><br>
+
+
+            <a
+                href="https://wa.me/5511989207413?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento%20para%20minha%20festa.%20🎉"
+                target="_blank"
+                class="btn-contato"
+            >
+
+                💬
+
+                Falar pelo WhatsApp
+
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
+    <footer>
+
+
+        <div class="footer-logo">
+
+            <img
+                src="logo.png"
+                alt="Zap Mania Festa"
+            >
+
+            <div>
+
+                <strong>
+                    Zap Mania Festa
+                </strong>
+
+                <span>
+                    Doces e salgados para festas
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-social">
+
+            <a
+                href="https://www.instagram.com/zap_mania.festa/"
+                target="_blank"
+            >
+                Instagram
+            </a>
+
+            <a
+                href="https://wa.me/5511989207413"
+                target="_blank"
+            >
+                WhatsApp
+            </a>
+
+        </div>
+
+
+        <div class="footer-copy">
+
+            © 2026 Zap Mania Festa.
+            Todos os direitos reservados.
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- =========================
+         SCRIPT
+    ========================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
